@@ -77,22 +77,24 @@
 }
 
 h2 {
-    font-size:55px;
+    font-size:45px;
 }
 h2 a{
     font-size:30px;
 }
 
 .content-text{
+    padding: 0;
     margin:10px 0;
     text-align: left;
     display: inline-block;
     height:75vh;
     writing-mode: vertical-rl;
+    line-height: 7vw;
 }
 .content-text p{
     font-size:25px;
-    padding:20px 0;
+    padding:50px 0;
 }
 #box1{
     background:linear-gradient(180deg, rgb(53, 100, 151) 0%, rgb(132, 183, 186)65%,rgb(255, 249, 227)100%);
@@ -115,7 +117,7 @@ h2 a{
     color:#898989;
 }
 #box6{
-    background:linear-gradient(180deg, rgb(122, 110, 172) 0%, rgb(255, 203, 175)100%);
+    background:linear-gradient(180deg, rgb(122, 110, 172) 0%, rgb(255, 203, 175)80%, rgb(255, 232, 175)100%);
     color:aliceblue;
 }
 #box7{
@@ -127,8 +129,9 @@ h2 a{
     color:#ffffff;
 }
 #box9{
-    background:#ffffff;
-    height: 10px;
+    background:linear-gradient(180deg, rgb(255, 249, 227) 0%, rgb(233, 251, 255)100%);
+    color:#b8b8b8;
+    font-size: 15px;
 }
 
 
