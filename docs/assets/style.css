@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  
+    height:100vh;
 }
 
 .blur1{
@@ -92,7 +92,7 @@ h2 a{
     padding:20px 0;
 }
 #box1{
-    background:linear-gradient(180deg, rgb(63, 118, 176) 0%, rgb(132, 183, 186)65%,rgb(255, 249, 227)100%);
+    background:linear-gradient(180deg, rgb(53, 100, 151) 0%, rgb(132, 183, 186)65%,rgb(255, 249, 227)100%);
     color:rgb(255, 255, 255);
 }
 #box2{
@@ -124,8 +124,8 @@ h2 a{
     color:#ffffff;
 }
 #box9{
-    background:linear-gradient(180deg, rgb(40, 59, 107) 0%, rgb(145, 211, 255)75%, rgb(255, 227, 253)85%, rgb(255, 233, 227)100%);
-    color:#ffffff;
+    background:#ffffff;
+    height: 10px;
 }
 
 
