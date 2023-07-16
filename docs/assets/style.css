@@ -16,7 +16,10 @@
     text-align: center;
     justify-content: center;
 }
-
+.hibikore{
+   margin:auto;
+    height: 50vh;
+}
 .box{
     color: #fff;
     padding: 40px;
@@ -74,21 +77,21 @@
 }
 
 h2 {
-    font-size:35px;
+    font-size:55px;
 }
 h2 a{
-    font-size:20px;
+    font-size:30px;
 }
 
 .content-text{
     margin:10px 0;
     text-align: left;
     display: inline-block;
-    height:65vh;
+    height:75vh;
     writing-mode: vertical-rl;
 }
 .content-text p{
-    font-size:20px;
+    font-size:25px;
     padding:20px 0;
 }
 #box1{
@@ -108,11 +111,11 @@ h2 a{
     color:rgb(95, 125, 151);
 }
 #box5{
-    background:linear-gradient(180deg, rgb(241, 230, 255) 0%,rgb(255, 230, 230)30%, rgb(235, 193, 163)100%);
+    background:linear-gradient(180deg, rgb(241, 230, 255) 0%,rgb(255, 230, 230)30%, rgb(255, 200, 163)100%);
     color:#898989;
 }
 #box6{
-    background:linear-gradient(180deg, rgb(68, 155, 179) 0%,rgb(255, 228, 228)85%, rgb(239, 214, 204)100%);
+    background:linear-gradient(180deg, rgb(122, 110, 172) 0%, rgb(255, 203, 175)100%);
     color:aliceblue;
 }
 #box7{

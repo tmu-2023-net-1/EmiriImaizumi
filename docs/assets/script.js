@@ -103,7 +103,7 @@ $(function() {
         }
       });
     }
-  //最後まで行ったら戻る
+  
     sceneWrap.scroll(function() {
       var scrollPos = $(this).scrollTop();
       var lastBoxOffset = boxes.eq(lastBoxIndex).offset().top + sceneWrap.height();
@@ -112,8 +112,6 @@ $(function() {
           sceneWrap.scrollTop(0);
           isScrolled = false;
         }, 0);
-        $('.pagination .active').removeClass('active');
-        $('.pagination').find('a[href="#' + $(this).attr('data-section-name') + '"]').addClass('active');
       }
     });
   });
