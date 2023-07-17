@@ -6,7 +6,9 @@
 }
 
 
-
+#splash{
+    margin: auto;
+}
 #header{
     height:100vh;
     background:#ffffff;
@@ -18,6 +20,11 @@
 .hibikore{
    margin:auto;
     height: 50vh;
+    animation-fill-mode:forwards;
+    animation: 2s fade 0s ease-out;
+}
+.hibikore2{
+    height: 30vh;
 }
 .box{
     color: #fff;
