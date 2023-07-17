@@ -102,13 +102,14 @@ h2 a{
         font-size:35px;
     }
     .content-text h2 a{
-        font-size: 22px;
+        font-size: 20px;
     }
     .content-text p{
         padding-top: 100px;
-        font-size:22px;
+        font-size:20px;
     }
     .br-sp {display: none; }
+
 }
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
@@ -132,8 +133,8 @@ h2 a{
     color:rgb(255, 255, 255);
 }
 #box2{
-    background:linear-gradient(180deg, rgb(97, 194, 255) 0%, rgb(248, 245, 255)70%, rgb(250, 240, 255)100%);
-    color:azure;
+    background:linear-gradient(180deg, rgb(101, 196, 255) 0%, rgb(232, 222, 255)70%, rgb(243, 220, 255)100%);
+    color:rgb(255, 255, 255);
 }
 #box3{
     background:linear-gradient(180deg, rgb(84, 172, 255) 0%,rgb(85, 193, 255)5%, rgb(184, 237, 255)100%);
@@ -161,7 +162,7 @@ h2 a{
 }
 #box9{
     background:linear-gradient(180deg, rgb(255, 249, 227) 0%, rgb(222, 199, 255)100%);
-    color:#b8b8b8;
+    color:#858585;
     font-size: 15px;
 }
 

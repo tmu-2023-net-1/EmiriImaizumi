@@ -13,6 +13,7 @@ $(function() {
         setTimeout(function() {
           $('html, body').animate({ scrollTop: sceneWrap.offset().top }, 800);
           isScrolled = true;
+          resetURLAndScrollToBox2();
         }, 200);
       } else if (isScrolled && scrollPos === sceneWrap.offset().top) {
         setTimeout(function() {
@@ -69,7 +70,7 @@ $(function() {
   
     var lastScrollTop = 0;
   
-    //下向きスクロール文字表示
+    //下向きスクロール文字
     function fadeAnimeDown() {
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
@@ -104,15 +105,9 @@ $(function() {
       });
     }
   
-    sceneWrap.scroll(function() {
-      var scrollPos = $(this).scrollTop();
-      var lastBoxOffset = boxes.eq(lastBoxIndex).offset().top + sceneWrap.height();
-      if (scrollPos >= lastBoxOffset) {
-        setTimeout(function() {
-          sceneWrap.scrollTop(0);
-          isScrolled = false;
-        }, 0);
-      }
-    });
+    function resetURLAndScrollToBox2() {
+      history.replaceState({}, document.title, window.location.href.split('#')[0] + '#box2');
+      $.scrollify.move('#黎明');
+    }
   });
   
