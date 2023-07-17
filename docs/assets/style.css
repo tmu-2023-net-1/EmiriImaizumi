@@ -67,7 +67,7 @@
     margin: auto;
 }
 #header{
-    height:300vh;
+    height:200vh;
     background:#ffffff;
     color: #eec0bd;
     display:flex;
@@ -172,6 +172,14 @@
     opacity:0;
 }
 
+#title{
+    position: fixed;
+    top:5vh;
+    right:3vw ;
+}
+.hibikore3{
+    height:20vh;
+}
 h2 {
     font-size:45px;
 }
