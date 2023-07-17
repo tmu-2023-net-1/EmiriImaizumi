@@ -9,7 +9,6 @@
 
 #header{
     height:100vh;
-    font-size: 45px;
     background:#ffffff;
     color: #eec0bd;
     display:flex;
@@ -27,7 +26,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:100vh;
 }
 
 .blur1{
@@ -82,10 +80,9 @@ h2 {
 h2 a{
     font-size:30px;
 }
-
 .content-text{
     padding: 0;
-    margin:10px 0;
+    margin:0;
     text-align: left;
     display: inline-block;
     height:75vh;
@@ -96,16 +93,50 @@ h2 a{
     font-size:25px;
     padding:50px 0;
 }
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    .content-text{
+        height:85vh;
+    }
+    .content-text h2 {
+        font-size:35px;
+    }
+    .content-text h2 a{
+        font-size: 22px;
+    }
+    .content-text p{
+        padding-top: 100px;
+        font-size:22px;
+    }
+    .br-sp {display: none; }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .content-text{
+        height:90vh;
+    }
+    .content-text h2 {
+        font-size:35px;
+    }
+    .content-text h2 a{
+        font-size: 20px;
+    }
+    .content-text p{
+        font-size:20px;
+    }
+    .br-sp {display: none; }
+}
+
 #box1{
     background:linear-gradient(180deg, rgb(53, 100, 151) 0%, rgb(132, 183, 186)65%,rgb(255, 249, 227)100%);
     color:rgb(255, 255, 255);
 }
 #box2{
-    background:linear-gradient(180deg, rgb(97, 194, 255) 0%, rgb(248, 245, 255)90%, rgb(250, 240, 255)135%);
+    background:linear-gradient(180deg, rgb(97, 194, 255) 0%, rgb(248, 245, 255)70%, rgb(250, 240, 255)100%);
     color:azure;
 }
 #box3{
-    background:linear-gradient(180deg, rgb(104, 182, 255) 0%,rgb(124, 207, 255)75%, rgb(164, 232, 255)100%);
+    background:linear-gradient(180deg, rgb(84, 172, 255) 0%,rgb(85, 193, 255)5%, rgb(184, 237, 255)100%);
     color:#ffffff
 }
 #box4{
@@ -125,11 +156,11 @@ h2 a{
     color:#ffffff
 }
 #box8{
-    background:linear-gradient(180deg, rgb(23, 60, 95) 0%,rgb(28, 69, 86)50%, rgb(38, 97, 102)100%);
+    background:linear-gradient(180deg, rgb(22, 41, 75) 0%,rgb(28, 64, 86)50%, rgb(38, 85, 102)100%);
     color:#ffffff;
 }
 #box9{
-    background:linear-gradient(180deg, rgb(255, 249, 227) 0%, rgb(233, 251, 255)100%);
+    background:linear-gradient(180deg, rgb(255, 249, 227) 0%, rgb(222, 199, 255)100%);
     color:#b8b8b8;
     font-size: 15px;
 }
