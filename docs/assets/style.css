@@ -4,13 +4,70 @@
     font-weight: 300;
     font-style: normal;
 }
+#splash {
+    /*fixedで全面に固定*/
+    top:0px;
+    height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background:#ffffff;
+  text-align:center;
+}
 
+.scroll-bar{
+    position  : absolute;
+    bottom : 20%;
+    right : 0px;
+    animation-fill-mode:forwards;
+    animation: 1.5s fade 0s ease-out;
+}
+.scroll {
+    color: #333;
+    position  : relative;
+    font-size : 15px;
+    writing-mode : vertical-rl;
+    bottom : 20%;
+    left : 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.scroll::after {
+    content : '';
+    display : inline-block;
+    position : absolute;
+    background-color: #000;
+    right : 50%;
+    bottom : -115px;
+    transform : translateX(-50%);
+    width : 1px;
+    height : 100px;
+    animation: scroll 1.5s infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
 
 #splash{
     margin: auto;
 }
 #header{
-    height:100vh;
+    height:300vh;
     background:#ffffff;
     color: #eec0bd;
     display:flex;
@@ -18,13 +75,28 @@
     justify-content: center;
 }
 .hibikore{
-   margin:auto;
-    height: 50vh;
+   margin-top:30vh;
+    height: 35vh;
+    animation: 2s fade3 0s ease-out;
     animation-fill-mode:forwards;
-    animation: 2s fade 0s ease-out;
+    z-index: 4;
 }
 .hibikore2{
     height: 30vh;
+}
+
+#about{
+    padding-top:20vh;
+    line-height: 12vw;
+    writing-mode : vertical-rl;
+    text-align:left;
+    color: #858585;
+    font-size:17px;
+    position: absolute;
+    margin: auto;
+    animation: 2s fade2 0s ease-out;
+    animation-fill-mode:forwards;
+    z-index: 0;
 }
 .box{
     color: #fff;
@@ -43,6 +115,25 @@
     animation-fill-mode:forwards;
     animation: 1.5s fade2 0s ease-out;
 }
+@keyframes fade3 {
+    0% {
+        filter: blur(10px);
+        transform: translateY(+10px);
+        opacity: 0;
+        scale:140%;
+    }
+    80%{
+        filter: blur(0px);
+      transform: translateY(0px);
+      opacity: 1;
+        scale:140%;
+    }
+    
+    100% {
+        scale: 140%;
+    }
+}
+
 @keyframes fade {
     0% {
         filter: blur(10px);
@@ -100,7 +191,8 @@ h2 a{
     font-size:25px;
     padding:50px 0;
 }
-@media screen and (max-width: 959px) {
+
+@media screen and (max-width: 959px) and (min-height:650px){
 	/* 959px以下に適用されるCSS（タブレット用） */
     .content-text{
         height:85vh;
@@ -112,13 +204,26 @@ h2 a{
         font-size: 20px;
     }
     .content-text p{
-        padding-top: 100px;
         font-size:20px;
     }
     .br-sp {display: none; }
 
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 959px){
+    .content-text{
+        height:85vh;
+    }
+    .content-text h2 {
+        font-size:35px;
+    }
+    .content-text h2 a{
+        font-size: 20px;
+    }
+    .content-text p{
+        font-size:20px;
+    }
+}
+@media screen and (max-width: 480px) and (min-height:750px){
 	/* 480px以下に適用されるCSS（スマホ用） */
     .content-text{
         height:90vh;
@@ -133,6 +238,20 @@ h2 a{
         font-size:20px;
     }
     .br-sp {display: none; }
+}
+@media screen and (max-width: 480px){
+    .content-text{
+        height:90vh;
+    }
+    .content-text h2 {
+        font-size:35px;
+    }
+    .content-text h2 a{
+        font-size: 20px;
+    }
+    .content-text p{
+        font-size:20px;
+    }
 }
 
 #box1{

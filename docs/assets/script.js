@@ -1,3 +1,8 @@
+$(window).on('load',function(){
+  $("#splash").delay(2000).fadeOut('slow');
+  
+});
+
 $(function() {
     var sceneWrap = $('.scene-background-wrap');
     var boxes = sceneWrap.find('.box');
@@ -45,7 +50,7 @@ $(function() {
       scrollbars: false,
       interstitialSection: "#header, #footer",
       easing: "swing",
-      scrollSpeed: 800,
+      scrollSpeed: 1000,
       before: function(i, panels) {
         var ref = panels[i].attr("data-section-name");
         $(".pagination .active").removeClass("active");
