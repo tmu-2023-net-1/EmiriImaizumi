@@ -4,6 +4,9 @@
     font-weight: 300;
     font-style: normal;
 }
+body{
+margin:0;
+}
 #splash {
     /*fixedで全面に固定*/
     top:0px;
