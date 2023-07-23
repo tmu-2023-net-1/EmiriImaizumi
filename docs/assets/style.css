@@ -39,7 +39,7 @@ margin:0;
     content : '';
     display : inline-block;
     position : absolute;
-    background-color: #000;
+    background-color: #333;
     right : 50%;
     bottom : -115px;
     transform : translateX(-50%);
@@ -270,31 +270,31 @@ h2 a{
     color:rgb(255, 255, 255);
 }
 #box2{
-    background:linear-gradient(180deg, rgb(101, 196, 255) 0%, rgb(232, 222, 255)70%, rgb(243, 220, 255)100%);
+    background:linear-gradient(180deg, rgb(101, 196, 255) 0%, rgb(232, 222, 255)65%, rgb(243, 220, 255)95%, rgb(84, 172, 255) 100%);
     color:rgb(255, 255, 255);
 }
 #box3{
-    background:linear-gradient(180deg, rgb(84, 172, 255) 0%,rgb(85, 193, 255)5%, rgb(184, 237, 255)100%);
+    background:linear-gradient(180deg, rgb(82, 172, 255) 0%,rgb(76, 189, 255)15%, rgb(184, 237, 255)90%, rgb(109, 211, 255) 100%);
     color:#ffffff
 }
 #box4{
-    background:linear-gradient(180deg, rgb(109, 211, 255) 0%,rgb(200, 239, 255)50%, rgb(233, 253, 255)100%);
+    background:linear-gradient(180deg, rgb(109, 211, 255) 0%,rgb(200, 239, 255)50%, rgb(233, 253, 255)90% ,rgb(241, 230, 255) 100%);
     color:rgb(95, 125, 151);
 }
 #box5{
-    background:linear-gradient(180deg, rgb(241, 230, 255) 0%,rgb(255, 230, 230)30%, rgb(255, 200, 163)100%);
+    background:linear-gradient(180deg, rgb(241, 230, 255) 0%,rgb(255, 230, 230)30%, rgb(255, 200, 163)90%, rgb(122, 110, 172) 100%);
     color:#898989;
 }
 #box6{
-    background:linear-gradient(180deg, rgb(122, 110, 172) 0%, rgb(255, 203, 175)80%, rgb(255, 232, 175)100%);
+    background:linear-gradient(180deg, rgb(122, 110, 172) 0%, rgb(255, 203, 175)80%, rgb(255, 232, 175)90%, rgb(53, 101, 134) 100%);
     color:aliceblue;
 }
 #box7{
-    background:linear-gradient(180deg, rgb(53, 101, 134) 0%,rgb(131, 173, 197)70%, rgb(255, 166, 136)100%);
+    background:linear-gradient(180deg, rgb(53, 101, 134) 0%,rgb(131, 173, 197)70%, rgb(255, 166, 136)90%, rgb(22, 41, 75) 100%);
     color:#ffffff
 }
 #box8{
-    background:linear-gradient(180deg, rgb(22, 41, 75) 0%,rgb(28, 64, 86)50%, rgb(38, 85, 102)100%);
+    background:linear-gradient(180deg, rgb(22, 41, 75) 0%,rgb(28, 64, 86)50%, rgb(38, 85, 102)90%, rgb(53, 100, 151) 100%);
     color:#ffffff;
 }
 #box9{
