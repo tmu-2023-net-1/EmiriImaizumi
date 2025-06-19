@@ -48,7 +48,7 @@ $(function() {
     $.scrollify({
       section: ".box",
       scrollbars: false,
-      interstitialSection: "#header, #footer",
+      interstitialSection: "#header",
       easing: "swing",
       scrollSpeed: 1500,
       before: function(i, panels) {
@@ -68,7 +68,7 @@ $(function() {
         });
         pagination += "</ul>";
   
-        $("#box1").append(pagination);
+        $("#box2").append(pagination);
         $(".pagination a").on("click", $.scrollify.move);
       }
     });
